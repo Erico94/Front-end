@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans';
+}
+
+body {
+    width: 1366px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background: #D0EBFF;
+    color: #1971C2;
+    height: 72px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: #1971C2;
+    opacity: 0.7;
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 20px 0 0;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.nav a:first-child {
+    border-bottom: #1971C2 2px solid;
+    padding: 0 0 10px 0;
+    border-radius: 1px;
+}
+
+.nav a:active {
+    color: #061800;
+}
+
+.solicitacao input {
+    border: 1px solid #1971C2;
+    border-radius: 15px;
+    width: 150px;
+    height: 30px;
+    background: #D0EBFF;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    color: #1971C2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.solicitacao input:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.solicitacao input:active {
+    border-color: rgb(78, 146, 123);
+    color: rgb(78, 146, 123);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    width: 1366px;
+    justify-content: space-evenly;
+    background: #D0EBFF;
+}
+
+.apresentacao input {
+    background: #1971C2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    width: 209px;
+    height: 50px;
+}
+
+.apresentacao input:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.texto {
+    width: 40%;
+    margin: 0 0 79px 0;
+}
+
+h5 {
+    margin: 0 0 40px 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+h1 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.texto p {
+    margin: 25px 0 30px 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.imagem {
+    width: 40%;
+    margin: 0 0 59px 0;
+}
+
+/* DADOS DA EMPRESA */
+.dadosEmpresa {
+    width: 1141px;
+    position: absolute;
+    top: 560px;
+    left: 92px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    height: 120px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.projetosFinalizados,
+.desenvolvedores {
+    border-right: rgb(25, 113, 194, 0.5) solid 1px;
+    padding: 0 143px 0 0;
+}
+
+.projetosFinalizados,
+.desenvolvedores,
+.anos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.dadosEmpresa h2 {
+    font-size: 32px;
+
+}
+
+.dadosEmpresa p {
+    margin: 4px 0 0 0;
+    font-size: 16px;
+    color: #1971C2;
+
+}
+
+
+/* SERVIÇOS */
+.servicos {
+    display: flex;
+    flex-direction: column;
+    background: #ACDCF7;
+    padding: 0 0 140px 0;
+}
+
+.textoServicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 507px;
+}
+
+.textoServicos p {
+    color: #1971C2;
+    margin-top: 200px;
+}
+
+.textoServicos h2 {
+    font-size: 30px;
+    margin: 15px 0 0 0;
+}
+
+/* GRID */
+
+.grid-container {
+    margin: 50px 130px 20px 103px;
+    display: grid;
+    column-gap: 27px;
+    row-gap: 27px;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    background-color: #FFFFFF;
+    padding: 10px 10px 25px 25px;
+    border-radius: 5px;
+}
+
+.grid-item img {
+    background-color: #F0F9FF;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    border-radius: 8px;
+    margin: 10px 0 10px 1px;
+}
+
+.grid-item h3 {
+    color: #061800;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimentos p:first-child {
+    margin: 120px 0 0 0;
+}
+
+.depoimentos h2 {
+    margin: 25px 0 30px 0;
+    padding: 0 525px;
+}
+
+.comentarios {
+    display: flex;
+    width: 70%;
+}
+
+.comentarios div {
+    padding: 25px 20px 15px 20px;
+    margin: 15px 15px 20px 15px;
+    border-radius: 6px;
+    background: #F0F9FF;
+}
+
+.perfil {
+    margin: 15px 0;
+    float: left;
+}
+
+.comentarios p:last-child {
+    color: #1971C2;
+    margin: 25px 0 0 60px;
+    font-weight: 700;
+}
+
+.empresas {
+    display: flex;
+    flex-direction: column;
+    margin: 120px 0 160px 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.empresas h3 {
+    margin: 0 0 45px 0;
+    font-weight: 700;
+    line-height: 31px;
+    font-size: 24px;
+}
+
+.empresas img {
+    align-items: center;
+    margin: 30px 45px 0 45px;
+}
+
+.convite {
+    width: 1056px;
+    position: absolute;
+    top: 2419px;
+    left: 160px;
+    background: #1971C2;
+    border-radius: 6px;
+    display: flex;
+    height: 249px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.convite h2 {
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 30px;
+    width: 307px;
+}
+
+.convite input {
+    width: 220px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+}
+
+.convite input:hover {
+    cursor: pointer;
+}
+
+.convite input:active {
+    scale: 1.05;
+    background-color: rgb(185, 177, 177);
+}
+
+.sobreNos {
+    background: #F0F9FF;
+    display: flex;
+    padding: 268px 0 200px 0;
+    align-items: center;
+}
+
+.sobreNos img {
+    width: 400px;
+    height: 350px;
+}
+
+.sobreNos div:first-child {
+    padding: 0 100px 0 150px;
+}
+
+.sobreNos div:last-child {
+    padding: 0 150px 0 0;
+}
+
+.sobreNos p:first-child {
+    color: #1971C2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+}
+
+.sobreNos h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 25px;
+
+    color: #061800;
+}
+
+.sobreNos p:last-child {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.sobreNos input {
+    margin: 25px 0 0 0;
+    padding: 13px 25px;
+    background: #1971C2;
+    border-radius: 40px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.sobreNos input:hover {
+    cursor: pointer;
+}
+
+.sobreNos input:active {
+    scale: 1.05;
+    background-color: rgb(185, 177, 177);
+}
+
+.contato {
+    display: flex;
+    padding: 104px 0 193px 0;
+    justify-content: center;
+}
+
+.contato h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #061800;
+    margin:0 0 41px 0;
+}
+
+.endereco img {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.endereco p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+}
+
+.endereco input {
+    margin: 25px 0 0 0;
+    padding: 13px 25px;
+    background: #1971C2;
+    border-radius: 40px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.endereco input:hover {
+    cursor: pointer;
+}
+
+.endereco input:active {
+    scale: 1.05;
+    background-color: rgb(185, 177, 177);
+}
+
+.contato img:last-child {
+    width: 480px;
+    height: 300px;
+    padding: 0 0 0 100px;
+}
+
+.contato div:first-child {
+    padding: 22px 51px 0 0;
+    width: 357px;
+}
+
+footer {
+    background: #1971C2;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+footer div {
+    padding: 80px 0 0 0;
+}
+
+.direitosReservados {
+    padding: 80px 368px 0 0px;
+}
+
+.direitosReservados h3 {
+    float: left;
+}
+
+.direitosReservados h3 {
+    padding: 3px 0 0 0;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.direitosReservados h2 {
+    padding: 0 0 10px 0;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.direitosReservados p {
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 10px 0 0 0;
+}
+
+.redesSociais img {
+    padding: 0 15px 0 15px;
+}

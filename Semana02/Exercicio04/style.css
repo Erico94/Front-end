@@ -1,0 +1,56 @@
+p, h1, h3, img{
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(207, 214, 220);
+    margin: 50px 0 0 0;
+}
+
+.perfil {
+ border-radius: 75px;
+ width:150px;
+ margin: 0 0 20px 0;
+}
+
+h3 {
+    margin: 0 0 15px 0;
+    opacity: 70%;
+}
+
+a {
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 260px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(196, 199, 199);
+    transform: scale(1.05);
+}
+
+
+.imagem {
+    width: 20px;
+    margin: 5px 40px 5px 5px;
+}
+
+
+

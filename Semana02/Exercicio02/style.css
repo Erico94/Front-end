@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    padding-top: 40px;
+    font-size: 20px;
+}
+li {
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+.imagem {
+    background-color: #C6C6C6;
+    margin: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.lista {
+    background-color: #C6C6C6;
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+ul {
+    width: 40%;
+    text-align: left;
+}
+.frase {
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}

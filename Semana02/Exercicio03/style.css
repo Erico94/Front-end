@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap');
+
+h1,h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.page {
+    width: 780px;
+    background: #ffffff;
+    display: flex;
+}
+
+.main {
+    display: inline-flex;
+    flex-direction: column;
+    width: 60%;
+    border-right: 3px solid #000000;
+    padding: 1% 6% 5% 6%;
+}
+
+.presentation {
+    font-size: 13px;
+    line-height: 14px;
+    font-style: normal;
+}
+
+.presentation h1 {
+    margin: 20px 0 0 0;
+    
+}
+
+.presentation p {
+    margin: 25px 0 25px 0;
+}
+
+.presentation h3 {
+    margin: 10px 0 0 0;
+    color: #405169;
+    opacity: 75%;
+    font-weight: 400;
+
+}
+
+.presentation img {
+    float: left;
+    width: 50px;
+    padding: 18px 15px 0 0;
+}
+
+.experienceEducation img{
+    float: left;
+    margin: 0 15px 8px 0;
+}
+
+.experienceEducation h3{
+    margin: 0 0 15px 0;
+}
+
+.experienceEducation p {
+    margin: 8px 0 60px 0;
+    font-size: 10px;
+}
+
+.secundary {
+    font-size: 13px;
+    width: 40%;
+    margin: 0 4% 0 6%;
+}
+
+.secundary h3 {
+    margin: 35px 0 18px 0;
+}
+
+.secundary p, a{
+    line-height: 25px;
+}
+
+.people {
+    color:#7F8A9A;
+    margin: 10px 0 0 0;
+}
+
+.office {
+    color: #7F8A9A;
+    margin: 0 0 50px 0;
+}
