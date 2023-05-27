@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Conta {
+            #saldo = 0;
+            #senha;
+            nome;
+            constructor(senha, nome) {
+                this.#senha = senha;
+                this.nome = nome;
+            }
+            //MÉTODO DEPÓSITO
+            Deposito(senha, valor = 0, nome) {
+                if (senha === this.#senha) {
+                    this.#saldo += valor;
+                    console.log(`Olá ${nome} seja bem vindo. Depósito de R$${valor},00 efetuado com sucesso.`)
+                    console.log(`Seu novo saldo é de R$${this.#saldo},00.`);
+                    return;
+                }
+                console.log(`Senha inválida.`);
+            }
+            //MÉTODO RETIRADA
+            Retirada(senha, valor, nome) {
+                if (senha === this.#senha) {
+                    if (this.#saldo > valor) {
+                        this.#saldo -= valor;
+                        console.log(`Olá ${nome} seja bem vindo. Retirada de R$${valor},00 efetuado com sucesso.`)
+                        console.log(`Seu novo saldo é de R$${this.#saldo},00.`);
+                        return;
+                    }
+                    console.log(`Olá ${nome} seja bem vindo. Saldo insuficiente para esse saque. Saldo atual R$${this.#saldo}.`)
+                    return;
+                }
+                console.log(`Senha inválida.`);
+            }
+        }
+
+        const usuarioErico = new Conta(1234, 'Érico');
+        usuarioErico.Deposito(1234, 50, 'Érico');
+        console.log('-----------------------------------------');
+
+        usuarioErico.Deposito(0562, 500, 'Érico');
+        console.log('-----------------------------------------');
+
+        usuarioErico.Retirada(1234 , 450 , 'Érico');
+        console.log('-----------------------------------------');
+
+        usuarioErico.Retirada(123 , 48 , 'Érico');
+        console.log('-----------------------------------------');
+
+        usuarioErico.Retirada(1234 , 48 , 'Érico');
+    </script>
+</body>
+
+</html>

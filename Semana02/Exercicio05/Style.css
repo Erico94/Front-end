@@ -306,6 +306,12 @@ h1 {
     height: 50px;
     border-radius: 30px;
     border: none;
+    background-color: #FFFFFF;
+    color: #1971C2;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .convite input:hover {
@@ -398,7 +404,7 @@ h1 {
     font-size: 40px;
     line-height: 52px;
     color: #061800;
-    margin:0 0 41px 0;
+    margin: 0 0 41px 0;
 }
 
 .endereco img {
