@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class CaixaRegistradora {
+            constructor() {
+                this.estoque = [];
+                this.nome = '';
+                this.totalConta = 0;
+            }
+
+            AdicionarProduto(codigoBarra = 0, preco = 0, nome = '') {
+                if (codigoBarra == 0 || preco == 0 || nome == '') {
+                    console.log('Todos os campos são de inserção obrigatória.');
+                } else {
+                    const produto = { codigoBarra, preco, nome };
+                    console.log(`Produto '${nome}' adicionado com sucesso ao estoque.`);
+                    this.estoque.push(produto);
+                }
+            }
+
+            IniciarAtendimento(nomeCliente) {
+                this.nome = nomeCliente;
+                console.log(`Atendimento ao cliente '${this.nome}' iniciado.`);
+            }
+
+            VenderProduto(codigoBarra, quantidade) {
+                let produto;
+                this.estoque.forEach(item => {
+                    if (item.codigoBarra === codigoBarra) {
+                        produto = item.nome;
+                        this.totalConta = quantidade * item.preco;
+                        console.log(`Item '${produto}' adicionado com sucesso.`);
+                        return;
+                    } else {
+                        console.log(`Código de barras ${codigoBarra} não encontrado.`);
+                        return;
+                    }
+                });
+            }
+
+            VerficarTotalCompra() {
+                console.log(`O valor atual da compra é de R$${this.totalConta},00.`);
+            }
+
+            FecharConta(dinheiro) {
+                if (dinheiro < this.totalConta) {
+                    console.log(`Valor da compra é de R$${this.totalConta}, recebido do cliente R$${dinheiro}. Falta dinheiro.`);
+                } else {
+                    let troco = dinheiro - this.totalConta;
+                    console.log(`Valor da compra é de R$${this.totalConta}, recebido do cliente R$${dinheiro}. Devolva o troco de R$${troco},00 ao cliente ${this.nome}.`);
+                    this.totalConta = 0;
+                }
+            }
+        }
+        let caixa = new CaixaRegistradora();
+        caixa.AdicionarProduto(8898, 9, 'suco');
+        caixa.IniciarAtendimento('Érico Mussulin');
+        caixa.VenderProduto(9889, 5);
+        caixa.VenderProduto(8898, 30);
+        caixa.VerficarTotalCompra();
+        caixa.FecharConta(100);
+        caixa.FecharConta(500);
+    </script>
+</body>
+
+</html>
