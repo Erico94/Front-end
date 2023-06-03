@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let clientes = [
+            { nome: 'Fernando', idade: 29, genero: 'Masculino' },
+            { nome: 'Alexsandra', idade: 31, genero: 'Feminino' },
+            { nome: 'Alex', idade: 25, genero: 'Masculino' }
+        ];
+        let nomesClientes = clientes.filter(cliente => cliente.genero === 'Masculino');
+        console.log(nomesClientes);
+    </script>
+</body>
+
+</html>
