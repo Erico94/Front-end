@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const promise = new Promise((resolve, reject) => {
+      fetch(`https://randomuser.me/api/?results=10`)
+        .then(response => {
+          if (response.ok) {
+            resolve(response.json());
+          } else {
+            reject(new Error(`Por algum motivo falhou, segue o erro ${response.status}`));
+          }
+        }).catch(error => reject(error));
+    });
+
+    let pessoas;
+    promise.then(data => {
+      pessoas = data;
+      console.log(pessoas);
+    }).catch(erro => {
+      pessoas = erro;
+      console.log(pessoas);
+    })
+
+    console.log(pessoas);
+
+
+  </script>
+</body>
+
+</html>

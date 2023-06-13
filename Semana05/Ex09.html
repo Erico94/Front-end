@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        async function FuncaoAssincrona(tempo) {
+            console.log(`Início da função assincrona de ${tempo}ms.`);
+            return new Promise(resolve => {
+                setTimeout(resolve, tempo);
+            });
+        }
+
+        FuncaoAssincrona(5000).then(resultado=>{
+            console.log("Acabou a função assíncrona.");
+        })
+        
+
+
+
+
+
+
+
+
+        // //       // Função assíncrona simulando uma tarefa demorada
+        // async function minhaFuncaoAssincrona() {
+        //     try {
+        //         console.log('2--Início da função assíncrona');
+
+        //         // Espera 1 segundo (simulando uma operação assíncrona)
+        //         await new Promise(resolve => setTimeout(resolve, 1000));
+
+        //         console.log('4--Tarefa assíncrona concluída');
+
+        //         // Retornando um valor
+        //         return '5--Resultado da função assíncrona';
+        //     } catch (error) {
+        //         console.error('Ocorreu um erro:', error);
+        //     }
+        // }
+
+        // // Chamando a função assíncrona
+        // console.log('1--Antes da chamada assíncrona');
+        // minhaFuncaoAssincrona()
+        //     .then(resultado => {
+        //         console.log('5--Resultado:', resultado);
+        //     })
+        //     .catch(error => {
+        //         console.error('Erro na chamada assíncrona:', error);
+        //     });
+        // console.log('3--Depois da chamada assíncrona');
+
+
+    </script>
+</body>
+
+</html>
