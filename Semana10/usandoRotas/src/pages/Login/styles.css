@@ -1,0 +1,25 @@
+header{
+    background: #6bb14b;
+}
+
+body {
+    background: #9cb98e;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin: 1px 0 1px 0 ;
+    width: 200px;
+}
+
+button {
+    background: rgb(59, 93, 204);
+    width: 225px;
+    margin: 12px;
+}
