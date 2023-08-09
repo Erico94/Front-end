@@ -41,6 +41,7 @@ header {
 }
 
 .solicitacao input {
+    transition: all 0.3s ease;
     border: 1px solid #1971C2;
     border-radius: 15px;
     width: 150px;
@@ -74,6 +75,7 @@ header {
 }
 
 .apresentacao input {
+    transition: all 0.3s ease;
     background: #1971C2;
     color: #FFFFFF;
     border: none;
@@ -302,6 +304,7 @@ h1 {
 }
 
 .convite input {
+    transition: all 0.3s ease;
     width: 220px;
     height: 50px;
     border-radius: 30px;
@@ -371,6 +374,7 @@ h1 {
 }
 
 .sobreNos input {
+    transition: all 0.3s ease;
     margin: 25px 0 0 0;
     padding: 13px 25px;
     background: #1971C2;
@@ -419,6 +423,7 @@ h1 {
 }
 
 .endereco input {
+    transition: all 0.3s ease;
     margin: 25px 0 0 0;
     padding: 13px 25px;
     background: #1971C2;
@@ -493,5 +498,14 @@ footer div {
 }
 
 .redesSociais img {
-    padding: 0 15px 0 15px;
+    margin: 0 15px 0 15px;
+}
+
+.redesSociais img:hover{
+    cursor: pointer;
+}
+
+.scale:hover{
+    cursor: pointer;
+    scale: 1.05;
 }
